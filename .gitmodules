@@ -1,0 +1,6 @@
+[submodule "thirdparty/yamcs"]
+	path = thirdparty/yamcs
+	url = git@github.com:yamcs/yamcs.git
+[submodule "thirdparty/yamcs-studio"]
+	path = thirdparty/yamcs-studio
+	url = git@github.com:yamcs/yamcs-studio.git
