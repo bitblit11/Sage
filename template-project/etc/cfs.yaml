@@ -1,0 +1,13 @@
+#configuration for the TcpTmProvider and TcpUplinker 
+# they look for properties like 
+#spec:
+#    tmHost: 
+#    tmPort:
+#    tcHost:
+#    tcPort:
+
+local:
+    tmHost: localhost
+    tmPort: 5011
+    tcHost: localhost
+    tcPort: 5010
