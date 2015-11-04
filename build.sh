@@ -66,6 +66,20 @@ fi
 echo ""
 echo "Yamcs Studio build complete."
 
+echo "********************************************"
+echo "*                                          *"
+echo "*     Building the Yamcs-CFS Provider      *"
+echo "*                                          *"
+echo "********************************************"
+(cd yamcs-cfs && exec mvn install)
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "ERROR:  Failed to build the Yamcs-CFS provider.  Aborting build."
+    exit -1
+fi
+echo ""
+echo "Yamcs-CFS provider build complete."
+
 
 echo "********************************************"
 echo "*                                          *"
