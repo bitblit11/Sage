@@ -1,4 +1,7 @@
 #!/bin/bash
+
+PRGDIR=`dirname "$PRG"`
+
 echo "********************************************"
 echo "*                                          *"
 echo "*           Updating submodules            *"
@@ -68,17 +71,18 @@ echo "Yamcs Studio build complete."
 
 echo "********************************************"
 echo "*                                          *"
-echo "*     Building the Yamcs-CFS Provider      *"
+echo "*        Building the Sage plugins         *"
 echo "*                                          *"
 echo "********************************************"
-(cd yamcs-cfs && exec mvn install)
+(cd yamcs-cfs && exec mvn package)
 if [ $? -ne 0 ]; then
     echo ""
     echo "ERROR:  Failed to build the Yamcs-CFS provider.  Aborting build."
     exit -1
 fi
 echo ""
-echo "Yamcs-CFS provider build complete."
+cp yamcs-cfs/target/*.jar live/lib/ext
+echo "Sage plugins build complete."
 
 
 echo "********************************************"
