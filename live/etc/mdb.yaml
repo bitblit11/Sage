@@ -39,4 +39,6 @@ cfs:
            - type: "sheet"
              spec: "mdb/SCH.xls"
            - type: "sheet"
+             spec: "mdb/TO.xls"
+           - type: "sheet"
              spec: "mdb/EIM.xls"
