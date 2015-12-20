@@ -2,6 +2,8 @@ cfs:
     # Configuration of the active loaders
     # Valid loaders are: sheet, xtce or fully qualified name of the class
     - type: "sheet"
+      spec: "mdb/CONFIG.xls"
+    - type: "sheet"
       spec: "mdb/cfs-ccsds.xls"
       subLoaders:
            - type: "sheet"
