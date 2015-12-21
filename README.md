@@ -4,7 +4,7 @@ The Sage telemetry and command system comes preconfigured to interface with NASA
 
 ## Platforms
 *  Linux.  Tested with the following:
-  *  Mint 17.1
+  *  Mint 17.1, 17.2, 17.3
 *  Windows.  (IN WORK)
 
 ## Assumptions
